@@ -32,7 +32,7 @@ export const OldBlogs: React.FC = () => {
               </button>
               <div className="flex gap-1.5 text-[#5E5E5E] font-medium">
                 {el.date}
-                <img src="/public/calendar.svg" alt="date" />
+                <img src="/calendar.svg" alt="date" />
               </div>
             </div>
           </div>
@@ -63,7 +63,7 @@ export const OldBlogs: React.FC = () => {
               </button>
               <div className="flex gap-1.5 text-[#5E5E5E] font-medium">
                 {el.date}
-                <img src="/public/calendar.svg" alt="date" />
+                <img src="/calendar.svg" alt="date" />
               </div>
             </div>
           </div>

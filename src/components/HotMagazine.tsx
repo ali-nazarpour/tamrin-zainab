@@ -1,6 +1,6 @@
 export const HotMagazine: React.FC = () => {
   return (
-    <div className=" w-full   px-8  md:md:mt-8">
+    <div className=" w-full px-8 md:md:mt-8">
       <h5 className="text-[#111111] font-bold text-lg mt-6">
         مجله های داغ و محبوب اماکن تفریحی
       </h5>
@@ -8,17 +8,17 @@ export const HotMagazine: React.FC = () => {
         <div className=" flex flex-col items-center justify-center bg-white p-4 lg:flex-row lg:items-start lg:justify-center lg:gap-x-3 gap-x-5 rounded-lg">
           <div className="relative">
             <img
-              src="/public/Rectangle 70400.png"
+              src="/Rectangle 70400.png"
               className="mb-4 cursor-pointer"
               alt="image"
             />
             <img
-              src="/public/Group 75.svg"
+              src="/Group 75.svg"
               alt="heart"
               className="absolute top-2 left-2"
             />
             <img
-              src="/public/Group 1931.svg"
+              src="/Group 1931.svg"
               alt="place name"
               className="absolute bottom-7 right-2"
             />
@@ -69,7 +69,7 @@ export const HotMagazine: React.FC = () => {
           <div className="border-r-4 border-r-purple-100 p-1 rounded-xs hover:bg-gray-300 cursor-pointer">
             <div className="bg-white p-3 rounded-lg flex justify-between items-center gap-x-3 w-[450px]">
               <div className="flex items-center justify-center gap-x-3">
-                <img  src="/public/Group 1818.png" alt="1" />
+                <img src="/Group 1818.png" alt="1" />
                 <div className="flex flex-col gap-y-2">
                   <h3 className="text-purple-100 font-bold">
                     نشانی جدید جنگل ابر کجاست؟
@@ -79,17 +79,13 @@ export const HotMagazine: React.FC = () => {
                   </p>
                 </div>
               </div>
-              <img
-                className="w-4 h-4"
-                src="/public/arrow-square-leftnew.svg"
-                alt=""
-              />
+              <img className="w-4 h-4" src="/arrow-square-leftnew.svg" alt="" />
             </div>
           </div>
 
           <div className="border-r-4 border-gray-300 p-1 rounded-xs  hover:bg-gray-300 cursor-pointer">
             <div className="bg-white p-3 rounded-lg flex gap-x-3 w-[450px]">
-              <img src="/public/Group 1818.png" alt="2" />
+              <img src="/Group 1818.png" alt="2" />
               <div className="flex flex-col gap-y-2">
                 <h3 className="font-bold text-[#111111]">
                   نشانی جدید جنگل ابر کجاست؟
@@ -102,7 +98,7 @@ export const HotMagazine: React.FC = () => {
           </div>
           <div className="border-r-4 border-r-gray-300 p-1 rounded-xs hover:bg-gray-300 cursor-pointer">
             <div className="bg-white p-3 rounded-lg flex gap-x-3 w-[450px]">
-              <img src="/public/Group 1845.png" alt="3" />
+              <img src="/Group 1845.png" alt="3" />
               <div className="flex flex-col gap-y-2">
                 <h3 className="font-bold text-[#111111]">
                   نشانی جدید جنگل ابر کجاست؟
@@ -115,7 +111,7 @@ export const HotMagazine: React.FC = () => {
           </div>
           <div className="border-r-4 border-r-gray-300 p-1 rounded-xs hover:bg-gray-300 cursor-pointer">
             <div className="bg-white p-3 rounded-lg flex gap-x-3 w-[450px]">
-              <img src="/public/Group 1784.png" alt="4" />
+              <img src="/Group 1784.png" alt="4" />
               <div className="flex flex-col gap-y-2">
                 <h3 className="font-bold text-[#111111]">
                   نشانی جدید جنگل ابر کجاست؟

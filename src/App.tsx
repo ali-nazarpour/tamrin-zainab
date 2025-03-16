@@ -27,7 +27,6 @@ function App() {
         <Pagination />
       </div>
       <div className="bg-[#F8F8F8]">
-        {" "}
         <Footer />
       </div>
     </>

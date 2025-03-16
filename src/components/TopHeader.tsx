@@ -3,7 +3,7 @@ export const TopHeader: React.FC = () => {
     <div className="w-full h-22 bg-[#F1F1F1] px-5 shadow shadow-gray-300 flex flex-wrap items-center justify-center gap-3 md:gap-5">
       <div className="flex items-center gap-3">
         <button className="bg-white rounded-lg p-2 cursor-pointer hidden md:block ">
-          <img src="/public/arrow-square-lft.png" alt="arrowRight" />
+          <img src="/arrow-square-lft.png" alt="arrowRight" />
         </button>
       </div>
 
@@ -30,7 +30,7 @@ export const TopHeader: React.FC = () => {
 
       <div className="flex items-center gap-3">
         <button className="bg-white p-2 rounded-lg cursor-pointer hidden md:block">
-          <img src="/public/arrow-square-left.png" alt="arrowLeft" />
+          <img src="/arrow-square-left.png" alt="arrowLeft" />
         </button>
       </div>
     </div>

@@ -9,7 +9,7 @@ export const BlogsComponent: React.FC = () => {
         </h5>
         <div className="md:bg-white text-nowrap rounded-t-xl py-5 md:px-4 lg:px-5 flex gap-2 lg:gap-8 justify-between md:justify-normal w-full md:w-auto">
           <button className="bg-[#343434] text-white md:py-2 px-3 pl-6 md:px-6 rounded-md flex gap-1 items-center text-sm lg:text-base">
-            <img src="/public/timer.svg" alt="timer" className="w-4 h-4" />
+            <img src="/timer.svg" alt="timer" className="w-4 h-4" />
             زمان انتشار{""}
           </button>
           <div className="flex gap-2 lg:gap-4">
@@ -62,7 +62,7 @@ export const BlogsComponent: React.FC = () => {
               </button>
               <div className="flex gap-1.5 text-[#5E5E5E] font-medium">
                 {el.date}
-                <img src="/public/calendar.svg" alt="date" />
+                <img src="/calendar.svg" alt="date" />
               </div>
             </div>
           </div>

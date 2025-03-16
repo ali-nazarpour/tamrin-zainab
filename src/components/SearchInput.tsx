@@ -10,16 +10,18 @@ export const SearchInput: React.FC = () => {
           placeholder="دنبال چه مقاله ای میگردی؟"
         />
         <div className="absolute inset-y-0 left-3 flex items-center">
-          <img  src="/public/input-prefix.svg" alt="search icon" className="w-5 h-5" />
+          <img src="/input-prefix.svg" alt="search icon" className="w-5 h-5" />
         </div>
       </div>
       <div className="flex flex-col gap-y-5 items-start md:flex  justify-between md:items-center text-[#111111] md:justify-center gap-x-4 font-bold  pt-4 lg:pt-0">
         <div className="flex justify-between bg-white rounded-lg">
           <div className="flex items-center justify-center pr-3 py-4 rounded-lg cursor-pointer">
-            <img src="/public/heart.png" alt="heart icon" />
+            <img src="/heart.png" alt="heart icon" />
             <p className="px-3">مقالاتی که ذخیره کردید</p>
           </div>
-          <button className="text-white rounded-lg px-4 py-4 bg-[#111111]">23</button>
+          <button className="text-white rounded-lg px-4 py-4 bg-[#111111]">
+            23
+          </button>
         </div>
         <div className="flex items-center justify-center bg-white px-4 py-4 rounded-lg cursor-pointer">
           <p className="">10,165 مقاله</p>

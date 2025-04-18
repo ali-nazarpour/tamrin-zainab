@@ -1,35 +1,45 @@
-import { Navbar } from "./components/Navbar";
-import { TopHeader } from "./components/TopHeader";
-import { SearchInput } from "./components/SearchInput";
-import { HotMagazine } from "./components/HotMagazine";
-import { NewMagazine } from "./components/NewMagazine";
-import { BlogsComponent } from "./components/BlogsComponent";
-import { OldBlogs } from "./components/OldBlogs";
-import { Pagination } from "./components/Pagination";
-import { Footer } from "./components/Footer";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import {
+  createBrowserRouter,
+  RouterProvider,
+  Navigate,
+} from "react-router-dom";
+import { Provider as ReduxProvider } from "react-redux";
+import { reduxStore } from "./redux/store";
+import { HomePage } from "./pages/home";
+import { ShoppingCart } from "./pages/shoppingcart";
+import { ErrorBoundary } from "./components/errorboundry";
+import { Notfound } from "./pages/not-found";
+import { MainLayout } from "./layout/MainLayout";
+import { Order } from "./pages/Order";
+import { SearchProvider } from "./context/SearchContext";
 
 function App() {
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      errorElement: <ErrorBoundary />,
+      element: <MainLayout />,
+      children: [
+        { index: true, element: <Navigate to="/products" replace /> },
+        { path: "products", element: <HomePage /> },
+        { path: "shoppingcart", element: <ShoppingCart /> },
+        { path: "order", element: <Order /> },
+        { path: "/404", element: <Notfound /> },
+      ],
+    },
+  ]);
+
+  const queryClient = new QueryClient();
+
   return (
-    <>
-      <Navbar />
-      <div className="container max-w-[1400px] pt-30 lg:pt-19 mx-auto bg-[#F8F8F8]">
-        <div className="hidden lg:block">
-          <TopHeader />
-        </div>
-        <SearchInput />
-        <div className="block lg:hidden">
-          <TopHeader />
-        </div>
-        <HotMagazine />
-        <NewMagazine />
-        <BlogsComponent />
-        <OldBlogs />
-        <Pagination />
-      </div>
-      <div className="bg-[#F8F8F8]">
-        <Footer />
-      </div>
-    </>
+    <ReduxProvider store={reduxStore}>
+      <QueryClientProvider client={queryClient}>
+        <SearchProvider>
+          <RouterProvider router={router} />
+        </SearchProvider>
+      </QueryClientProvider>
+    </ReduxProvider>
   );
 }
 
